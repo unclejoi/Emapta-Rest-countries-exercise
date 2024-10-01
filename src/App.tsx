@@ -36,7 +36,7 @@ function App() {
         <BrowserRouter>
             <Routes>
               <Route path="/"  element={<Home />}/>
-              <Route path="/ViewCountry/:id" element={<ViewCountryInformation />} />
+              <Route path="/ViewCountry/:id" element={<ViewCountryInformation client={clientQuery} />} />
             </Routes>
           </BrowserRouter>
       </QueryClientProvider>
