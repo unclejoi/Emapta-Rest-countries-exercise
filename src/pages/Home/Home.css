@@ -1,0 +1,112 @@
+.autocompleteWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .autocompleteRef {
+        width: 100%;
+        max-width: 400px;
+
+
+        .inputWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+
+            & input {
+                height: 40px;
+                max-width: 400px;
+                width: 100%;
+                font-size: 16px;
+                outline: 0;
+                padding: 5px 10px 5px 40px;
+                border-radius: 5px;
+                border-width: 2px;
+                border-color: #000;
+            }
+
+            & input:focus{
+                border-color: #646cff;
+                border-width: 2px;
+            }
+
+            & input:placeholder-shown {
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    
+    .iconWrapper {
+        position: absolute;
+        left: 10px;
+    }
+
+    .loadingWrapper {
+        position: absolute;
+        right: 10px;
+    }
+
+    & ul {
+        list-style: none;
+        padding: 0px;
+        max-width: 400px;
+        width: 100%;
+        margin: 0;
+        overflow: auto;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
+        top: 57px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        & li {
+            display: flex;
+            height: 40px;
+            align-items: center;
+            width: auto;
+            padding: 5px;
+            color: #000;
+            cursor: pointer;
+            font-size: 16px;
+            border-bottom: 1px solid rgba(50, 50, 93, 0.25);
+            
+            .flagContainer {
+                height: 25px;
+                width: 70px;
+
+                & img {
+                    height: 25px;
+                    width: 40px;
+                }
+            }
+
+            .countryName {
+                width: 70%;
+                font-size: 16px;
+                letter-spacing: 0.5px;
+            }
+
+            .coatsOfArmsWrapper {
+                height: 25px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                
+                & img {
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+
+.countryInfoCardWrapper {
+    margin-top: 60px;
+}
