@@ -24,7 +24,7 @@ const ViewCountryInformation = React.memo((props: { data: IDataType }) => {
                         <b>{data.name.official}</b> 
                     </p>
                     <p className='currency'> 
-                        <b>Currency:</b> {currency.map((value: currencyType) => value.name)} ({currency.map((value: currencyType) => value.symbol).join(', ')})
+                        <b>Currency:</b> {currency.map((value: currencyType) => `${value.name} (${value.symbol}`).join(', ')})
                     </p>
                     <p className='driveSide'> 
                         <b>Side of the road they Drive on:</b> {data.car.side}
