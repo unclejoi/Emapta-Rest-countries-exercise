@@ -14,8 +14,8 @@
 - [REST Countries API (v3.1)](https://restcountries.com/)
 
 ## Getting started
--Access it via stackblitz: (https://stackblitz.com/~/github.com/unclejoi/Emapta-Rest-countries-exercise)
--Access by cloning the repo:
+- Access it via stackblitz: (https://stackblitz.com/~/github.com/unclejoi/Emapta-Rest-countries-exercise)
+- Access by cloning the repo:
 1. Clone the repository:
    ```bash
    git clone https://github.com/unclejoi/Emapta-Rest-countries-exercise.git
